@@ -1,0 +1,392 @@
+/**
+ * Admin styles for Demo Data Pilot
+ */
+
+.ddp-admin-page {
+    max-width: 1400px;
+    margin: 20px 0;
+}
+
+.ddp-admin-page h1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.ddp-version {
+    display: inline-block;
+    background: #f0f0f1;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #50575e;
+}
+
+.ddp-description {
+    font-size: 15px;
+    color: #50575e;
+    margin-bottom: 30px;
+}
+
+/* Generators Grid */
+.ddp-generators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Generator Card */
+.ddp-generator-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.ddp-generator-card.ddp-inactive {
+    opacity: 0.7;
+}
+
+.ddp-generator-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ddp-generator-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.ddp-generator-icon,
+.ddp-generator-icon-placeholder {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.ddp-generator-icon-placeholder {
+    background: linear-gradient(135deg, #2271b1, #135e96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ddp-generator-title {
+    flex: 1;
+}
+
+.ddp-generator-title h2 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.ddp-status-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.ddp-badge-active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.ddp-badge-inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.ddp-generator-description {
+    color: #50575e;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+}
+
+/* Data Types */
+.ddp-data-types {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ddp-data-type {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.ddp-data-type-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.ddp-data-type-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.ddp-data-type-info .dashicons {
+    color: #2271b1;
+    font-size: 18px;
+}
+
+.ddp-count-badge {
+    background: #e0e0e0;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #50575e;
+}
+
+.ddp-data-type-controls {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.ddp-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ddp-input-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1d2327;
+}
+
+.ddp-count-input {
+    width: 100px;
+    padding: 6px 10px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.ddp-button-group {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+}
+
+.ddp-button-group .button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    height: auto;
+}
+
+.ddp-button-group .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.ddp-generate-btn {
+    flex: 1;
+}
+
+.ddp-cleanup-btn {
+    color: #b32d2e;
+    border-color: #b32d2e;
+}
+
+.ddp-cleanup-btn:hover {
+    background: #b32d2e;
+    color: #fff;
+    border-color: #b32d2e;
+}
+
+/* Progress Bar */
+.ddp-progress-bar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.ddp-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2271b1, #135e96);
+    transition: width 0.3s ease;
+}
+
+.ddp-progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1d2327;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Logs Section */
+.ddp-logs-section {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.ddp-logs-section h2 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+.ddp-no-logs {
+    color: #50575e;
+    font-style: italic;
+}
+
+.ddp-logs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.ddp-log-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #c3c4c7;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.ddp-log-entry.ddp-log-error {
+    border-left-color: #d63638;
+    background: #ffefef;
+}
+
+.ddp-log-entry.ddp-log-success {
+    border-left-color: #00a32a;
+    background: #e6f7e9;
+}
+
+.ddp-log-entry.ddp-log-warning {
+    border-left-color: #f0b849;
+    background: #fff8e5;
+}
+
+.ddp-log-timestamp {
+    color: #787c82;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.ddp-log-level {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ddp-level-info {
+    background: #e0f0ff;
+    color: #0073aa;
+}
+
+.ddp-level-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.ddp-level-error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.ddp-level-warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.ddp-log-generator {
+    color: #2271b1;
+    font-weight: 600;
+}
+
+.ddp-log-message {
+    flex: 1;
+    color: #1d2327;
+}
+
+/* Loading State */
+.ddp-button-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.ddp-button-loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: ddp-spin 0.6s linear infinite;
+}
+
+@keyframes ddp-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .ddp-generators-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ddp-data-type-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ddp-button-group {
+        flex-direction: column;
+    }
+
+    .ddp-log-entry {
+        flex-wrap: wrap;
+    }
+}

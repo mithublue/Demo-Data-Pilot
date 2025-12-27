@@ -1,0 +1,19 @@
+{
+    "name": "demo-data-pilot/demo-data-pilot",
+    "description": "A modular WordPress plugin for generating realistic dummy data for various plugins",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4",
+        "fakerphp/faker": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "DemoDataPilot\\": "includes/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
