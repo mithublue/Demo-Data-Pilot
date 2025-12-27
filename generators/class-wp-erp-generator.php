@@ -93,7 +93,7 @@ class Wp_Erp_Generator extends Abstract_Generator {
 				$last_name  = $this->faker->lastName();
 
 				$employee_data = array(
-					'user_email'     => strtolower( $first_name . '.' . $last_name . rand( 1, 999 ) . '@' . $this->faker->safeEmailDomain() ),
+					'user_email'     => strtolower( $first_name . '.' . $last_name . wp_rand( 1, 999 ) . '@' . $this->faker->safeEmailDomain() ),
 					'first_name'     => $first_name,
 					'last_name'      => $last_name,
 					'designation'    => $this->faker->randomElement( array(

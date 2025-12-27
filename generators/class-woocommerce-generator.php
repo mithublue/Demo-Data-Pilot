@@ -210,7 +210,7 @@ class WooCommerce_Generator extends Abstract_Generator {
 				$customer->set_first_name( $first_name );
 				$customer->set_last_name( $last_name );
 				$customer->set_email( strtolower( $first_name . '.' . $last_name . '@' . $this->faker->safeEmailDomain() ) );
-				$customer->set_username( strtolower( $first_name . $last_name . rand( 1, 999 ) ) );
+				$customer->set_username( strtolower( $first_name . $last_name . wp_rand( 1, 999 ) ) );
 
 				// Billing address.
 				$customer->set_billing_first_name( $first_name );

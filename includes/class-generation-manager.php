@@ -163,7 +163,7 @@ class Generation_Manager {
 			$batch_ids = $generator->generate( $type, $batch_count, $args );
 
 			if ( is_wp_error( $batch_ids ) ) {
-				throw new \Exception( $batch_ids->get_error_message() );
+				throw new \Exception( esc_html( $batch_ids->get_error_message() ) );
 			}
 
 			$generated_ids = array_merge( $generated_ids, $batch_ids );

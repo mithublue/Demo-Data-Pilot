@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Demo Data Pilot
- * Plugin URI: https://yourwebsite.com/demo-data-pilot
+ * Plugin URI: 
  * Description: A modular, extensible WordPress plugin for generating realistic dummy/demo data for various WordPress plugins like WooCommerce, WP ERP, and more.
  * Version: 1.0.1
- * Author: Your Name
- * Author URI: https://yourwebsite.com
+ * Author: Mithu A Quayium
+ * Author URI: https://cybercraftit.com
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: demo-data-pilot
