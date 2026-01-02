@@ -1,5 +1,5 @@
 === Demo Data Pilot ===
-Contributors: (your-wordpress-username)
+Contributors: mithucybercraft
 Tags: demo data, dummy data, test data, woocommerce, development
 Requires at least: 5.8
 Tested up to: 6.9

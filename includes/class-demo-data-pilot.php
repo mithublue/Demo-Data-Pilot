@@ -44,7 +44,7 @@ class Demo_Data_Pilot {
 		$this->plugin_name = 'demo-data-pilot';
 
 		$this->load_dependencies();
-		$this->set_locale();
+
 		$this->define_admin_hooks();
 	}
 
@@ -56,12 +56,7 @@ class Demo_Data_Pilot {
 		$this->loader = new Loader();
 	}
 
-	/**
-	 * Define the locale for this plugin for internationalization.
-	 */
-	private function set_locale() {
-		$this->loader->add_action( 'plugins_loaded', $this, 'load_plugin_textdomain' );
-	}
+
 
 	/**
 	 * Register all of the hooks related to the admin area functionality.
@@ -87,16 +82,7 @@ class Demo_Data_Pilot {
 		$this->loader->add_action( 'init', $this, 'register_generators', 5 );
 	}
 
-	/**
-	 * Load the plugin text domain for translation.
-	 */
-	public function load_plugin_textdomain() {
-		load_plugin_textdomain(
-			'demo-data-pilot',
-			false,
-			dirname( DEMO_DATA_PILOT_PLUGIN_BASENAME ) . '/languages/'
-		);
-	}
+
 
 	/**
 	 * Register all available generators.
