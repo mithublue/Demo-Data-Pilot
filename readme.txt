@@ -1,5 +1,5 @@
 === Demo Data Pilot ===
-Contributors: mithucybercraft
+Contributors: mithublue, cybercraftit
 Tags: demo data, dummy data, test data, woocommerce, development
 Requires at least: 5.8
 Tested up to: 6.9
